@@ -1,0 +1,20 @@
+X X X X X X X X X X X X X X X X X X X X 
+X X   B   B   X X         X X       B X 
+X             X       X X X   X X X   X 
+X X               D X   X       X X   X 
+X     B                         X   B X 
+X   X               X                 X 
+X X B X     X           B             X 
+X         B   B X     X             B X 
+X           X     B   X X             X 
+X X           X                       X 
+X               X             X       X 
+X       D                             X 
+X     X   X             B   X X       X 
+X     B   X X                 B       X 
+X   X   X B         B     X     X     X 
+X   X         X         X       B     X 
+X X     X       X X                   X 
+X     X   B   X   B                   X 
+X B X         D                       X 
+X X X X X X X X X X X X X X X X X X X X 

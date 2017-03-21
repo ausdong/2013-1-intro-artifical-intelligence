@@ -1,0 +1,43 @@
+<project>
+  <description>
+    Grid-world Agent
+  </description>
+
+  <!-- set global properties for this build -->
+  <property name="dist"  location="dist"/>
+
+  <target name="run" depends="compile"
+        description="run application" >
+
+    <java dir="./" fork="yes" classname="VisualFoodHunt" />
+  </target>
+
+  <target name="compile" 
+        description="compile everything" >
+
+    <javac srcdir="./" debug="yes"
+	   excludes="StdioFoodHunt.java,agent/RecallerAgent.java"
+	   />
+  </target>
+
+  <target name="dist" depends="compile"
+        description="student distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}"/>
+
+    <!-- Put student files in zip -->
+    <zip zipfile="${dist}/agent-student.zip">
+      <fileset dir="./">
+        <include name="build.xml"/>
+        <include name="**/*.java"/>
+        <include name="**/*.class"/>
+        <include name="grid/*.txt"/>
+        <exclude name="StdioFoodHunt*"/>
+        <exclude name="agent/LearnerAgent*"/>
+        <exclude name="agent/ballgame/CengizGunayAgent*"/>
+        <exclude name="util/QLearning*"/>
+        <exclude name="agent/RecallerAgent.*"/>
+      </fileset>
+    </zip>
+  </target>
+</project>
